@@ -42,26 +42,7 @@ export default function Component() {
     }
   ])
 
-  const addTeam = () => {
-    setTeams([
-      ...teams,
-      {
-        id: teams.length + 1,
-        name: '',
-        members: [
-          {
-            id: 1,
-            name: '',
-            year: '',
-            libraryId: '',
-            email: '',
-            contact: '',
-            gender: ''
-          }
-        ]
-      }
-    ])
-  }
+ 
 
   const addTeamMember = (teamId: number) => {
     setTeams(teams.map(team => 

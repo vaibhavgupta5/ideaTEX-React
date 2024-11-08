@@ -18,10 +18,7 @@ const Sponsers = () => {
     </div>
 
     <div className="text-[16px] w-full md:w-[40%] md:text-right mt-8 md:mt-0 align-bottom text-[#838490]">
-      Immerse in mesmerizing performances,vibrant soundscapes,and
-      interactive art at our music extravaganza. Experience a
-      festival atmosphere like no other, where unforgettable
-      moments.
+    We are proud to have the support of our esteemed sponsors who make IDEATEX possible. Their commitment to fostering innovation and entrepreneurship provides participants with valuable resources, opportunities, and recognition.
     </div>
   </div>
 
@@ -41,10 +38,10 @@ const Sponsers = () => {
 
 
 <div className='w-full flex justify-center'>
-<button className="flex items-center md:w-[20%] justify-center gap-2 px-6 py-4 border border-[#AE0D61] rounded-lg text-gray-300 hover:bg-[#AE0D61] hover:text-white transition duration-300 ease-in-out">
+<a href='mailto:ecellcorporate@gmail.com' className="flex items-center md:w-[20%] justify-center gap-2 px-6 py-4 border border-[#AE0D61] rounded-lg text-gray-300 hover:bg-[#AE0D61] hover:text-white transition duration-300 ease-in-out">
       <span className="font-semibold">Become A Sponsor</span>
       <ArrowRight className="w-5 h-5" />
-    </button>
+    </a>
 
 </div>
 

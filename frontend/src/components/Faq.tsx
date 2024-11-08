@@ -1,32 +1,42 @@
 'use client';
-import React, { useState } from "react";
+import  { useState } from "react";
 import Heading from "./Heading"; // Adjust the path as needed
 import { ArrowRight } from "lucide-react"; // Use lucide-react for the arrow icon
 
 const faqs = [
   {
-    question: "What is the date and location of the Harmonia music concert?",
-    answer: "Are you a developer interested in building web applications and at the same time thinking about multiple parts of the stack needed to build them? Then this conference is for you. Many of the sessions either touch a specific concept or go about multiple parts of the stack.",
+    question: "What is IDEATEX?",
+    answer: "IDEATEX is an innovation-driven event that provides a platform for aspiring entrepreneurs to present their unique business ideas, receive feedback, and network with industry experts.",
   },
   {
-    question: "Can I change the attendee name on the ticket?",
-    answer: "Are you a developer interested in building web applications and at the same time thinking about multiple parts of the stack needed to build them? Then this conference is for you. Many of the sessions either touch a specific concept or go about multiple parts of the stack.",
+    question: "Who can participate in IDEATEX?",
+    answer: "IDEATEX is open to all students, entrepreneurs, and innovators. Teams can consist of 1-4 members.",
   },
   {
-    question: "How can I purchase tickets for the event?",
-    answer: "Are you a developer interested in building web applications and at the same time thinking about multiple parts of the stack needed to build them? Then this conference is for you. Many of the sessions either touch a specific concept or go about multiple parts of the stack.",
+    question: "What type of ideas are allowed?",
+    answer: "The business ideas presented must be original, feasible, and capable of creating a positive impact.",
   },
   {
-    question: "Are there age restrictions for attending the event?",
-    answer: "Are you a developer interested in building web applications and at the same time thinking about multiple parts of the stack needed to build them? Then this conference is for you. Many of the sessions either touch a specific concept or go about multiple parts of the stack.",
+    question: "What is the structure of the event?",
+    answer: "IDEATEX consists of a single round where teams present their business ideas. The best ideas are chosen based on feasibility, creativity, and impact.",
   },
   {
-    question: "Is there parking available at the venue?",
-    answer: "Are you a developer interested in building web applications and at the same time thinking about multiple parts of the stack needed to build them? Then this conference is for you. Many of the sessions either touch a specific concept or go about multiple parts of the stack.",
+    question: "How long should the presentation be?",
+    answer: "The duration for each presentation will be specified in the event guidelines. Generally, it lasts around 5-10 minutes, followed by a Q&A session.",
   },
   {
-    question: "Is the event accessible for individuals with disabilities?",
-    answer: "Are you a developer interested in building web applications and at the same time thinking about multiple parts of the stack needed to build them? Then this conference is for you. Many of the sessions either touch a specific concept or go about multiple parts of the stack.",
+    question: "Do I need prior business experience to participate?",
+    answer: "No, prior business experience is not required. We encourage all innovative thinkers with fresh ideas to participate.",
+  },
+  {
+    question: "What is the judging criteria?",
+    answer: "Judges will evaluate ideas based on originality, practicality, scalability, market potential, and overall presentation quality.",
+  }, {
+    question: "Can I update my submission after registration?",
+    answer: "Once registered, you can update your submission before the submission deadline. Make sure to check the event guidelines for deadlines and updates.",
+  },{
+    question: "What happens after the event?",
+    answer: "Post-event, you’ll receive feedback from judges and mentors. There will be opportunities to network and explore funding or partnership opportunities for your idea.",
   },
 ];
 
@@ -38,7 +48,7 @@ const FAQSection = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center  text-white p-0 md:p-8">
+    <div id="faq" className="flex flex-col md:flex-row items-center  text-white p-0 md:p-8">
       {/* Left Side with Heading */}
       <div className="md:w-[40%] w-full flex items-start h-full pr-8">
         <Heading top="Solutions for Your Curiosities" med="IdeaTex" last="HELPDESK" />

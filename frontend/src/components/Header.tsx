@@ -19,16 +19,16 @@ function Header() {
             <a href="/" className="font-[600] text-[18px] hover:text-[#AE0D61]">
               HOME
             </a>
-            <a href="#" className="font-[600] text-[18px] hover:text-[#AE0D61]">
+            <a href="#about" className="font-[600] text-[18px] hover:text-[#AE0D61]">
               ABOUT US
             </a>
-            <a href="#" className="font-[600] text-[18px] hover:text-[#AE0D61]">
-              SPEAKERS
+            <a href="#schedule" className="font-[600] text-[18px] hover:text-[#AE0D61]">
+              SCHEDULE
             </a>
-            <a href="#" className="font-[600] text-[18px] hover:text-[#AE0D61]">
-              EVENTS
+            <a href="#faq" className="font-[600] text-[18px] hover:text-[#AE0D61]">
+              FAQS
             </a>
-            <a href="#" className="font-[600] text-[18px] hover:text-[#AE0D61]">
+            <a href="#sponser" className="font-[600] text-[18px] hover:text-[#AE0D61]">
               SPONSORS
             </a>
             <a href="/register" className="bg-[#AE0D61] font-[600] py-2 px-6 rounded-lg border-2 border-[#AE0D61] hover:bg-transparent hover:border-[#AE0D61]">
