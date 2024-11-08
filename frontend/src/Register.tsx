@@ -45,6 +45,9 @@ export default function Component() {
  
 
   const addTeamMember = (teamId: number) => {
+   console.log(teams[0].members.length)
+    if(teams[0].members.length < 4) {
+
     setTeams(teams.map(team => 
       team.id === teamId
         ? {
@@ -64,6 +67,7 @@ export default function Component() {
           }
         : team
     ))
+  }
   }
 
   const removeTeamMember = (teamId: number, memberId: number) => {
@@ -137,11 +141,11 @@ export default function Component() {
     {/* Content */}
     <div className="relative z-10">
       <Header />
-    <div className="flex pt-16 hode items-center">
+    <div className={`flex ${teams[0].members.length > 1 && 'md:pt-[8rem]'} pt-[4rem] hode items-center`}>
       <div className="w-[40%] p-8 md:flex  hidden items-center justify-center h-screen">
-        <img className="w-[100%] flex items-center justify-center" src="logo.png" alt="" />
+        <img className="w-[100%] sticky flex items-center justify-center" src="logo.png" alt="" />
       </div>
-      <div className="md:w-[60%] w-full md:p-8 p-6 pt-10 md:pt-8 flex items-center justify-center">
+      <div className="md:w-[60%]  w-full md:p-8 p-6 pt-10 md:pt-8  flex items-center justify-center">
       <Card className="w-full  mx-auto bg-gray-950 text-gray-100">
       <CardHeader>
         <CardTitle className="text-2xl font-bold">Team Registration Form</CardTitle>
@@ -288,7 +292,7 @@ export default function Component() {
             <Button
               onClick={() => addTeamMember(team.id)}
               variant="outline"
-              className="w-full border-dashed border-2 border-gray-700 hover:border-primary hover:bg-gray-900"
+              className={`w-full ${teams[0].members.length === 4 && 'hidden'} border-dashed border-2 border-gray-700 hover:border-primary hover:bg-gray-900`}
             >
               <Plus className="mr-2 h-4 w-4 " />
               Add Team Member
