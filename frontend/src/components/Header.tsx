@@ -16,7 +16,7 @@ function Header() {
 
           {/* Desktop Links */}
           <div className="hidden md:flex justify-end items-center gap-6 w-[60%]">
-            <a href="#" className="font-[600] text-[18px] hover:text-[#AE0D61]">
+            <a href="/" className="font-[600] text-[18px] hover:text-[#AE0D61]">
               HOME
             </a>
             <a href="#" className="font-[600] text-[18px] hover:text-[#AE0D61]">
@@ -31,9 +31,10 @@ function Header() {
             <a href="#" className="font-[600] text-[18px] hover:text-[#AE0D61]">
               SPONSORS
             </a>
-            <button className="bg-[#AE0D61] font-[600] py-2 px-6 rounded-lg border-2 border-[#AE0D61] hover:bg-transparent hover:border-[#AE0D61]">
-              Buy Tickets
-            </button>
+            <a href="/register" className="bg-[#AE0D61] font-[600] py-2 px-6 rounded-lg border-2 border-[#AE0D61] hover:bg-transparent hover:border-[#AE0D61]">
+            
+            Register Now
+            </a>
           </div>
 
           {/* Mobile Menu Icon */}
@@ -72,7 +73,7 @@ function Header() {
             onClick={toggleMenu}
             className="mt-8 bg-[#AE0D61] text-white font-[600] py-3 px-10 rounded-lg border-2 border-[#AE0D61] hover:bg-transparent hover:text-[#AE0D61]"
           >
-            Buy Tickets
+            Register Now
           </button>
         </div>
       )}
